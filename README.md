@@ -11,4 +11,4 @@ also for the systemd service (if you're using linux)
 sudo vim /etc/systemd/system/<WHATEVER_NAME_YOU_WANT>.service
 sudo systemctl daemon-reload
 sudo systemctl enable --now <WHATEVER_NAME_YOU_WANT>
-``
+```
