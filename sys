@@ -1,0 +1,13 @@
+[Unit]
+Description=Discord IP Notifier Bot
+After=network.target
+
+[Service]
+ExecStart=/home/<bot_user>/ip_notifier_bot/venv/bin/python /home/<bot_user>/ip_notifier_bot/bot.py
+WorkingDirectory=/home/<bot_user>/ip_notifier_bot
+Restart=always
+User=<bot_user>
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
